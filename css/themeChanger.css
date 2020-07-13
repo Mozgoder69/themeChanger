@@ -1,0 +1,128 @@
+body { 
+    background: #182028;
+    color: #d8e0e8;
+    font: normal 16px/24px "Roboto", Arial, sans-serif;
+    line-height: 1.5;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+}
+
+body, nav, .slider:before {
+    box-shadow: 0 0 4px black;
+}
+
+nav, .night, .switch {
+    display: inline-flex;
+}
+
+nav {
+    width: 100%;
+}
+
+.themes, h1 {
+    margin: 10px;
+}
+
+img {
+    margin-top: 6px;
+}
+
+h1 {
+    font-size: medium;
+    text-align: center;
+}
+
+button {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #708090;
+    height: 40px;
+}
+
+button:hover {
+    background: #70809020;
+    color: #4080c0;
+}
+
+/*                      For DropDown Menus                      */
+/* ul {    */
+    /* border: 1px solid #708090; */
+    /* display: none; */
+    /* margin-left: -1px; */
+    /* margin-top: 1px; */
+    /* position: absolute; */
+    /* width: 40px; */
+/* } */
+
+/* li { */
+    /* list-style: none; */
+    /* margin-left: -40px; */
+    /* text-align: center; */
+/* } */
+
+/*                      For Adding More Themes                      */
+
+/* .doubleButn { */
+    /* float: right; */
+    /* width: 80px; */
+/* } */
+
+/* .doubleButn:hover { */
+    /* color: #4080c0; */
+    /* cursor: pointer; */
+/* } */
+
+/* .doubleButn:hover ul { */
+    /* display: block; */
+/* } */
+
+                        /*TOGGLE*/                      
+
+/* The switch - the box around the slider */
+.switch {
+    top: 10px;
+    height: 16px;
+    position: relative;
+    width: 40px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    display: none;
+}
+  
+/* The slider */
+
+.slider, .slider:before {
+    border-radius: 16px;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.slider {
+    background-color: #708090;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+  
+.slider:before {
+    background-color: #d8e0e8;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+}
+  
+input:checked + .slider {
+    background-color: #0080c0;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(16px);
+}
